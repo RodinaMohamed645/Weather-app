@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #04042C;
+  color: white;
+}
 .mat-menu {
   background-color: #3d3c46 !important;
   border-radius: 10px !important;

@@ -1,0 +1,38 @@
+.weather-info
+{
+    display: flex; 
+    align-items: center;
+    margin: 20px 0px;
+   
+}
+.info-item
+{
+    
+    background-color: #3d3c46;
+    width: 25%;
+    border-radius: 25px;
+    margin: 20px;
+   
+}
+.info-item .Title-menu
+{
+    font-size: 25px;
+    margin: 20px;
+   
+}
+.info-item .number
+{
+    font-size: 40px;
+    margin: 20px;
+   
+}
+@media screen and (max-width: 768px) {
+    .weather-info {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .info-item{
+        width: 40%;
+        margin-bottom: 10px;
+    }
+}
