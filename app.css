@@ -1,36 +1,81 @@
+/* ========================================
+   RESPONSIVE WEATHER APP - GRID LAYOUT
+   ======================================== */
+
+/* DEFAULT - DESKTOP (1025px and above) */
 .weather-main-container {
-    display: flex;
-    width: 80%;
-    
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+    'header header'
+    'search search'
+    'forecast hourly';
+  gap: 24px;
+  padding: 24px;
+  align-items: start;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+app-header {
+  grid-area: header;
+}
+
+app-search {
+  grid-area: search;
+}
+
+app-hourly-forecast {
+  grid-area: hourly;
+}
+
+.weather-forcast-container {
+  grid-area: forecast;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ========================================
+   TABLET - Medium screens (769px to 1024px)
+   ======================================== */
+@media screen and (max-width: 1024px) {
+  .weather-main-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      'header'
+      'search'
+      'forecast'
+      'hourly';
     gap: 20px;
-    margin: 50px auto;
-    height: 100%;
+    padding: 20px;
+    max-width: 100%;
+  }
 }
 
-.left-section {
-    width: 70%;
-}
-
-.right-section {
-    width: 30%;
-    height: 100%;
-}
-
+/* ========================================
+   MOBILE - Small screens (max 768px)
+   ======================================== */
 @media screen and (max-width: 768px) {
-    .weather-main-container {
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-    }
+  .weather-main-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'header'
+      'search'
+      'forecast'
+      'hourly';
+    gap: 16px;
+    padding: 12px;
+    max-width: 100%;
+    align-items: center ;
+    justify-content: center;
+  }
+ 
+ 
 
-    .left-section {
-        width: 100%;
-
-    }
-
-    .right-section {
-        width: 100%;
-
-    }
-
+  .weather-forcast-container {
+    gap: 16px;
+  }
 }

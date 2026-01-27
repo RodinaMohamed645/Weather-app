@@ -1,22 +1,15 @@
-<div>
+<section>
     <div class="additional-weather-container">
-   
-        <div class="weather-info">
-            <div class="info-item">
-                <p class="Title-menu">Feels Like</p>
-                <p class="number">60%</p>
-            </div>
-            <div class="info-item">
-                <p class="Title-menu">Humidity</p>
-                <p class="number">60%</p>
-            </div>
-            <div class="info-item">
-                <p class="Title-menu">Wind</p>
-                <p class="number">15 mph</p>
-            </div>
-            <div class="info-item">
-                <p class="Title-menu">Precipitation</p>
-                <p class="number">0 in</p>
-            </div>
-        </div>
-</div>
+
+        
+            @for (item of addtionalWeatherData; track $index) {
+            
+                <div class="info-item">
+                    <p class="label">{{ item.Label }}</p>
+                    <p class="value">{{ item.Value }}{{ item.Unit }}</p>
+                </div>
+            
+            }
+        
+    </div>
+</section>

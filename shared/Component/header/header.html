@@ -1,15 +1,15 @@
-<header>
+<header style="border: 2px solid forestgreen;">
   <div class="container header-container">
     <img src="assets/images/logo.svg" alt="Logo">
-
+    <nav aria-label="Main navigation">
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">News</a></li>
       <li><a href="#">Contact</a></li>
       <li><a href="#">Offer</a></li>
     </ul>
-
-    <div>
+    </nav>
+    
 
       <button matButton [matMenuTriggerFor]="menu">
         <mat-icon svgIcon="setting"></mat-icon>
@@ -30,13 +30,13 @@
         </button>
         <button mat-menu-item (click)="onSelectedTempUnit('F', $event) ">
           <span>Fahrenheit (°F)</span>
-          @if (this.selectedTempValue==true&& this.selectedTempUnit=='F') {
+          @if (selectedTempValue&& this.selectedTempUnit=='F') {
             <mat-icon  >check</mat-icon>
           }
         </button>
         <button mat-menu-item (click)="onSelectedTempUnit('C', $event) ">   
           <span>Celsius (°C)</span>
-          @if (this.selectedTempValue==true && this.selectedTempUnit=='C') {
+          @if (selectedTempValue && this.selectedTempUnit=='C') {
             <mat-icon  >check</mat-icon>
           }
         </button>
@@ -48,13 +48,13 @@
         </button>
         <button mat-menu-item (click)="onSelectedWindUnit('Km/h', $event) ">
           <span>Km/h</span>
-           @if (this.selectedWindValue==true && this.selectedWindUnit=='Km/h') {
+           @if (selectedWindValue && this.selectedWindUnit=='Km/h') {
             <mat-icon  >check</mat-icon>
           }
         </button>
         <button mat-menu-item (click)="onSelectedWindUnit('mph', $event) ">
           <span>mph</span>
-           @if (this.selectedWindValue==true && this.selectedWindUnit=='mph') {
+           @if (selectedWindValue && this.selectedWindUnit=='mph') {
             <mat-icon  >check</mat-icon>
           }
         </button>
@@ -66,18 +66,18 @@
         </button>
         <button mat-menu-item (click)="onSelectedPreciptaionUnit('mm', $event) ">
           <span>Millimeters (mm) </span>
-           @if (this.selectedPreciptaionValue==true && this.selectedPreciptaionUnit=='mm') {
+           @if (selectedPreciptaionValue && this.selectedPreciptaionUnit=='mm') {
             <mat-icon  >check</mat-icon>
           }
         </button>
         <button mat-menu-item (click)="onSelectedPreciptaionUnit('in', $event) ">
           <span>Inches (in)</span>
-           @if (this.selectedPreciptaionValue==true  && this.selectedPreciptaionUnit=='in') {
+           @if (selectedPreciptaionValue  && this.selectedPreciptaionUnit=='in') {
             <mat-icon  >check</mat-icon>
           }
         </button>
       </mat-menu>
-    </div>
+    
 
 
 
