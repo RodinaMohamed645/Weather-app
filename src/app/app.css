@@ -1,0 +1,36 @@
+.weather-main-container {
+    display: flex;
+    width: 80%;
+    
+    gap: 20px;
+    margin: 50px auto;
+    height: 100%;
+}
+
+.left-section {
+    width: 70%;
+}
+
+.right-section {
+    width: 30%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .weather-main-container {
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .left-section {
+        width: 100%;
+
+    }
+
+    .right-section {
+        width: 100%;
+
+    }
+
+}

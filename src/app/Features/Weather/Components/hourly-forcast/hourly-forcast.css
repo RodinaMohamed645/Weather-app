@@ -1,0 +1,72 @@
+.Title-menu
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+    
+}
+.Title-menu p
+{
+    font-size: 25px;
+    font-weight: 600;
+}
+button[matButton] {
+  display: flex;
+  align-items: center;
+    /* margin: 8px 0px; */
+  background-color: #3d3c46;
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+button[matButton] span {
+  order: 1;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  
+}
+
+button[matButton] mat-icon[svgIcon="dropdownIcon"] {
+  order: 2;
+  margin-left: 8px; 
+}
+.hourly-forcast-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #36353d;
+    border: 1px solid #555559;
+    border-radius: 10px;
+    width: 400px;
+    padding: 5px 20px;
+    height: 100%;
+
+}
+.items
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3d3c46;
+    border: 1px solid #555559;
+    border-radius: 10px;
+    width: 400px;
+    font-size: 20px;
+    margin:5px;
+    padding: 5px 10px;
+    height:11% ;
+}
+.item
+{
+    display: flex;
+}
+.items img {
+    width: 40px;
+  
+}
+ 

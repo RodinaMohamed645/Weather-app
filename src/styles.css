@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #04042C;
+  color: white;
+}
+.mat-menu {
+  background-color: #3d3c46 !important;
+  border-radius: 10px !important;
+  width: 400px !important;
+}
+.mat-menu button[mat-menu-item]{
+  color: white !important;
+}
+
+
+ .mat-menu mat-icon {
+  color: white !important;
+}
+mat-divider {
+  border-color: #5e5c64 !important;
+  
+}
